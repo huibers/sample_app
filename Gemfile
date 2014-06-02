@@ -25,6 +25,8 @@ group :test do
   #gem 'rb-inotify', '0.8.8'
   gem 'rb-inotify', '~> 0.9'
   gem 'libnotify', '0.5.9'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
 end
 
 group :production do
