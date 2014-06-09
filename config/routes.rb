@@ -1,6 +1,13 @@
+# restart spork after changing this file to do unit tests...
+
 SampleApp::Application.routes.draw do
+  get "users/new"
+
   #get "static_pages/home"
   root to: 'static_pages#home'
+
+  match '/signup', to: 'users#new'
+
   #get "static_pages/help"
   #get "static_pages/about"
   #get "static_pages/contact"
