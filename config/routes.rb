@@ -1,7 +1,8 @@
 # restart spork after changing this file to do unit tests...
 
 SampleApp::Application.routes.draw do
-  get "users/new"
+  #get "users/new"
+  resources :users
 
   #get "static_pages/home"
   root to: 'static_pages#home'
